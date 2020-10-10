@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:drawable/progress_indeterminate_horizontal"
+    android:backgroundTint="#020753"
+    android:backgroundTintMode="multiply"
+    android:hapticFeedbackEnabled="true"
+    tools:context=".ConverterAktivity">
+
+
+    <EditText
+        android:id="@+id/tallTOConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/skriv_et_tall"
+        android:inputType="number"
+        android:textColor="#9FDFFF"
+        android:textColorHighlight="#9FDFFF"
+        android:textColorHint="#9FDFFF"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner9"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="#BE104A"
+        android:backgroundTintMode="src_in"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:entries="@array/imperiske_enheter"
+        android:hapticFeedbackEnabled="false"
+        android:popupBackground="@color/colorAccent"
+        android:scrollbarSize="8dp"
+        android:scrollbarTrackHorizontal="@color/colorAccent"
+        android:spinnerMode="dropdown"
+        android:splitMotionEvents="true"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tallTOConvert" />
+
+    <Button
+        android:id="@+id/Konverter"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/konverter"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner9" />
+
+    <TextView
+        android:id="@+id/myTextView2"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:scrollbarSize="8dp"
+        android:text="@string/resultat"
+        android:textColor="#9FDFFF"
+        android:textColorHint="#9FDFFF"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Konverter" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:text="@string/next"
+        android:textColor="#0C0101"
+        android:textColorHighlight="#03141D"
+        android:textColorHint="#153E52"
+        android:textSize="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myTextView2"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

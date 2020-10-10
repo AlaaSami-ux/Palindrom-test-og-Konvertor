@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Palindrom og konvertering</string>
+    <string name="Skriv_En_Tekst">Skriv</string>
+    <string name="test">Test</string>
+    <string name="konverter">Konverter</string>
+    <string name="next">Next</string>
+    <string name="skriv_en_tall">Skriv en tall</string>
+    <string name="Neste">Neste</string>
+    <string name="resultat">Resultat</string>
+    <string name="skriv_et_tall" />
+
+    <string-array name="imperiske_enheter">
+        <item>Spinner</item>
+        <item>fluid ounce</item>
+        <item>cup</item>
+        <item>gallon</item>
+        <item>hogshead</item>
+    </string-array>
+</resources>
